@@ -63,12 +63,7 @@ public class LocationProvider implements
                     .addApi(LocationServices.API)
                     .build();
 
-            // Create the LocationRequest object
-            mLocationRequest = LocationRequest.create()
-                    .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
-                    .setInterval(10 * 1000)        // 10 seconds, in milliseconds
-                    .setFastestInterval(1000);     // 1 second, in milliseconds
-        }
+            }
     }
 
     /**
@@ -115,6 +110,13 @@ public class LocationProvider implements
         if (location != null) {
             mLocationCallback.handleNewLocation(location);
         }
+
+        // Create the LocationRequest object
+        mLocationRequest = LocationRequest.create()
+                .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
+                .setInterval(1000)        // 10 seconds, in milliseconds
+                .setFastestInterval(1000);     // 1 second, in milliseconds
+
         // Now request continuous Location Updates
         LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
     }

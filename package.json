@@ -1,12 +1,63 @@
 {
-  "name": "react-native-google-location",
-  "version": "0.2.0",
-  "description": "Google Play Services Location Module for React Native Android.",
-  "main": "index.android.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://timhagn@bitbucket.org/timhagn/react-native-google-locations.git"
+  "_args": [
+    [
+      {
+        "raw": "react-native-google-location@0.2.0",
+        "scope": null,
+        "escapedName": "react-native-google-location",
+        "name": "react-native-google-location",
+        "rawSpec": "0.2.0",
+        "spec": "0.2.0",
+        "type": "version"
+      },
+      "/Users/MacBookpro15/Projects/SafeMotos-v4.0"
+    ]
+  ],
+  "_from": "react-native-google-location@0.2.0",
+  "_id": "react-native-google-location@0.2.0",
+  "_inCache": true,
+  "_location": "/react-native-google-location",
+  "_nodeVersion": "5.7.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-native-google-location-0.2.0.tgz_1461334238768_0.6030925922095776"
   },
+  "_npmUser": {
+    "name": "timhagn",
+    "email": "mail@timhagn.com"
+  },
+  "_npmVersion": "3.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-google-location@0.2.0",
+    "scope": null,
+    "escapedName": "react-native-google-location",
+    "name": "react-native-google-location",
+    "rawSpec": "0.2.0",
+    "spec": "0.2.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-google-location/-/react-native-google-location-0.2.0.tgz",
+  "_shasum": "e3efab2db8067caa45dce6d51ec83be518ad9802",
+  "_shrinkwrap": null,
+  "_spec": "react-native-google-location@0.2.0",
+  "_where": "/Users/MacBookpro15/Projects/SafeMotos-v4.0",
+  "author": {
+    "name": "Tim Hagn"
+  },
+  "dependencies": {},
+  "description": "Google Play Services Location Module for React Native Android.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "e3efab2db8067caa45dce6d51ec83be518ad9802",
+    "tarball": "https://registry.npmjs.org/react-native-google-location/-/react-native-google-location-0.2.0.tgz"
+  },
+  "gitHead": "bd2391377c96fc0dde140b4793df8151cb9a9419",
+  "homepage": "https://bitbucket.org/timhagn/react-native-google-locations#readme",
   "keywords": [
     "react-native",
     "react-component",
@@ -15,12 +66,21 @@
     "google",
     "location"
   ],
-  "author": {
-    "name": "Tim Hagn"
-  },
   "license": "ISC",
-  "homepage": "https://bitbucket.org/timhagn/react-native-google-locations#readme",
-  "gitHead": "bd2391377c96fc0dde140b4793df8151cb9a9419",
-  "_id": "react-native-google-location@0.2.0",
-  "_shasum": "e27e195e097cf253ca2a388f73f4e32fa193a7dd"
+  "main": "index.android.js",
+  "maintainers": [
+    {
+      "name": "timhagn",
+      "email": "mail@timhagn.com"
+    }
+  ],
+  "name": "react-native-google-location",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://timhagn@bitbucket.org/timhagn/react-native-google-locations.git"
+  },
+  "scripts": {},
+  "version": "0.2.0"
 }

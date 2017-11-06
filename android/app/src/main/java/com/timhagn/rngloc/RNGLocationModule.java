@@ -40,14 +40,7 @@ public class RNGLocationModule extends ReactContextBaseJavaModule implements Loc
         // Get Location Provider from Google Play Services
         mLocationProvider = new LocationProvider(mReactContext.getApplicationContext(), this);
 
-        // Check if all went well and the Google Play Service are available...
-        if (!mLocationProvider.checkPlayServices()) {
-            Log.i(TAG, "Location Provider not available...");
-        } else {
-            // Connect to Play Services
-            mLocationProvider.connect();
-            Log.i(TAG, "Location Provider successfully created.");
-        }
+
     }
 
 
@@ -73,6 +66,7 @@ public class RNGLocationModule extends ReactContextBaseJavaModule implements Loc
      */
     @ReactMethod
     public void getLocation() {
+
         if (mLastLocation != null) {
             try {
                 double Longitude;
@@ -94,6 +88,15 @@ public class RNGLocationModule extends ReactContextBaseJavaModule implements Loc
             } catch (Exception e) {
                 e.printStackTrace();
                 Log.i(TAG, "Location services disconnected.");
+            }
+        } else {
+            // Check if all went well and the Google Play Service are available...
+            if (!mLocationProvider.checkPlayServices()) {
+                Log.i(TAG, "Location Provider not available...");
+            } else {
+                // Connect to Play Services
+                mLocationProvider.connect();
+                Log.i(TAG, "Location Provider successfully created.");
             }
         }
     }
